@@ -26,5 +26,21 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "browserslist": [
+    "last 3 versions",
+    "ie 11",
+    "last 3 Edge versions",
+    "last 3 Chrome versions",
+    "last 3 Firefox versions",
+    "last 3 Safari versions",
+    "last 3 iOS versions",
+    "last 3 ChromeAndroid versions",
+    "last 3 FirefoxAndroid versions",
+    "last 3 UCAndroid versions",
+    "last 3 Samsung versions",
+    "last 3 Opera versions",
+    "last 3 OperaMini versions",
+    "last 3 OperaMobile versions",
+  ]
 }
