@@ -1,46 +1,39 @@
 {
-  "name": "namaste-react",
-  "version": "1.0.0",
-  "description": "This React episode 2",
-  "scripts": {
-    "test": "jest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/shashikant88093/Learn-react.git"
-  },
-  "keywords": [
-    "react",
-    "shashikant"
-  ],
-  "author": "shashikant kumar",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/shashikant88093/Learn-react/issues"
-  },
-  "homepage": "https://github.com/shashikant88093/Learn-react#readme",
-  "devDependencies": {
-    "parcel": "^2.11.0",
-    "process": "^0.11.10"
-  },
+  "name": "learnreact",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
-  "browserslist": [
-    "last 3 versions",
-    "ie 11",
-    "last 3 Edge versions",
-    "last 3 Chrome versions",
-    "last 3 Firefox versions",
-    "last 3 Safari versions",
-    "last 3 iOS versions",
-    "last 3 ChromeAndroid versions",
-    "last 3 FirefoxAndroid versions",
-    "last 3 UCAndroid versions",
-    "last 3 Samsung versions",
-    "last 3 Opera versions",
-    "last 3 OperaMini versions",
-    "last 3 OperaMobile versions",
-  ]
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

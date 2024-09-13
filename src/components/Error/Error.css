@@ -1,0 +1,11 @@
+.Error{
+    text-align: center;
+}
+
+.Error h1 {
+    color: red;
+}
+
+.Error h1 p{
+    color: greenyellow;
+}
