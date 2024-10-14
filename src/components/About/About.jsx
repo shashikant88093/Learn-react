@@ -1,4 +1,8 @@
 
+// component
+// hook 
+
+import User from "../User"
 // css
 import "./About.css"
 
@@ -6,7 +10,8 @@ import "./About.css"
 
     return(
         <div className="About">
-            <p>About</p>
+            <h1>About</h1>
+            <User/>
         </div>
     )
 }

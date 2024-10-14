@@ -1,13 +1,16 @@
-import React from 'react';
+import React,{lazy,Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import About from './components/About/About';
-import Contact from './components/Contact/Contact';
+// import Contact from '';
 import Error from './components/Error/Error';
 import './index.css';
 import App from './App';
+import Form from "./components/form"
 import reportWebVitals from './reportWebVitals';
 
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
+
+const Contact = lazy(()=> import("./components/Contact/Contact"))
 
 const appRouter = createBrowserRouter([
   {
@@ -15,12 +18,19 @@ const appRouter = createBrowserRouter([
     element:<App/>,
     children:[
       {
+        path:"/",
+        element:<Form/>
+      },
+      {
         path:'/about',
         element:<About/>
     
       },{
         path:'/contact',
-        element:<Contact/>,
+        element:
+        <Suspense fallback={<div>Loading...</div>}>
+          <Contact/>
+        </Suspense>
       }
     ],
     errorElement:<Error/>
